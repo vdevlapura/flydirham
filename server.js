@@ -3,7 +3,8 @@ const fs = require("fs");
 const path = require("path");
 
 const PORT = process.env.PORT || 3000;
-const ROOT = path.join(__dirname, "public");
+const ROOT = __dirname;
+const HIDDEN = new Set(["/server.js", "/package.json", "/LINKEDIN.md", "/.gitignore", "/.htaccess"]);
 const TYPES = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
@@ -27,6 +28,7 @@ http
     }
     if (urlPath.endsWith("/")) urlPath += "index.html";
     if (!path.extname(urlPath)) urlPath += ".html";
+    if (HIDDEN.has(urlPath) || urlPath.startsWith("/.git")) urlPath = "/__missing__.html";
     const file = path.normalize(path.join(ROOT, urlPath));
     if (!file.startsWith(ROOT)) {
       res.writeHead(403).end();
