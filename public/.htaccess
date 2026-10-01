@@ -1,0 +1,12 @@
+Options -Indexes
+ErrorDocument 404 /404.html
+DirectoryIndex index.html
+
+RewriteEngine On
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# /privacy -> privacy.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
