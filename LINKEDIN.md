@@ -10,7 +10,8 @@ Create the page yourself at linkedin.com/company/setup/new (you need to be logge
 | Industry | Travel Arrangements |
 | Organization size | 2-10 employees (pick what's true) |
 | Organization type | Privately held |
-| Headquarters | United Arab Emirates (add your real city) |
+| Headquarters | Office 612, Office Court Building, Oud Metha, Dubai, UAE (P.O. Box 124884) |
+| Phone | +971 4 235 3931 |
 | Founded | 2026 |
 | Logo | Export `public/favicon.svg` as a 400×400 PNG |
 
