@@ -136,4 +136,20 @@ footer a:hover { color: #fff; }
   .topbar .addr { display: none; }
   .hero h1 { font-size: 30px; }
   .tours, .foot, .two { grid-template-columns: 1fr; }
+  /* 16px stops iOS Safari zooming in when a field is tapped */
+  input, select, textarea { font-size: 16px; }
+  /* comfortable tap targets */
+  footer li a, .contact-box .line a { display: inline-block; padding: 10px 0; }
+  .topbar a { display: inline-block; padding: 8px 0; }
+  .topbar span { margin-right: 14px; }
+  .tour a { display: inline-block; padding: 12px 0; }
+  nav ul a { display: block; padding: 8px 0; }
+  .btn { padding: 13px 22px; }
+  .map { height: 220px; }
+}
+@media (max-width: 360px) {
+  .topbar span + span { display: none; }
+  .hero h1 { font-size: 26px; }
+  .brand-name { font-size: 19px; }
+  .topbar { font-size: 12px; }
 }
