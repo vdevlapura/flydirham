@@ -33,8 +33,7 @@ section[id] { scroll-margin-top: 80px; }
 .brand-sub { display: block; font-size: 11px; color: var(--grey); font-weight: 400; letter-spacing: .5px; margin-top: -4px; }
 nav ul { list-style: none; display: flex; gap: 26px; font-family: "Poppins", sans-serif; font-size: 14px; font-weight: 500; }
 nav a:hover, nav a.active { color: var(--red); }
-.call { text-align: right; font-size: 12px; color: var(--grey); line-height: 1.3; }
-.call a { display: block; font-family: "Poppins", sans-serif; font-size: 17px; font-weight: 600; color: var(--navy); }
+.head-btn { padding: 9px 18px; }
 .burger { display: none; background: none; border: 1px solid var(--border); border-radius: 4px; padding: 6px 10px; font-size: 18px; cursor: pointer; }
 
 /* hero */
@@ -128,12 +127,12 @@ footer a:hover { color: #fff; }
   .hero .wrap, .services, .about, .contact { grid-template-columns: 1fr; }
   .tours { grid-template-columns: 1fr 1fr; }
   .foot { grid-template-columns: 1fr 1fr; }
-  .call { display: none; }
 }
 @media (max-width: 767px) {
   .burger { display: block; }
   nav ul { display: none; position: absolute; left: 0; right: 0; top: 76px; background: #fff; flex-direction: column; padding: 16px 15px; gap: 14px; border-bottom: 1px solid var(--border); }
   nav ul.open { display: flex; }
+  .head-btn { display: none; }
   .topbar .addr { display: none; }
   .hero h1 { font-size: 30px; }
   .tours, .foot, .two { grid-template-columns: 1fr; }
