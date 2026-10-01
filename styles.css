@@ -153,3 +153,11 @@ footer a:hover { color: #fff; }
   .brand-name { font-size: 19px; }
   .topbar { font-size: 12px; }
 }
+
+/* form status */
+.form-note { font-size: 14px; margin-top: 12px; }
+.form-note:empty { display: none; }
+.form-note.ok { color: #157347; background: #e8f6ee; border: 1px solid #b7e2c8; padding: 10px 12px; border-radius: 4px; }
+.form-note.err { color: #9b1c2c; background: #fdecee; border: 1px solid #f5c2c8; padding: 10px 12px; border-radius: 4px; }
+.form-note a { text-decoration: underline; }
+.btn:disabled { opacity: .7; cursor: wait; }
