@@ -1,0 +1,13 @@
+{
+  "name": "flydirham",
+  "version": "1.0.0",
+  "description": "FlyDirham travel agency website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true
+}

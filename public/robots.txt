@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://flydirham.com/sitemap.xml
