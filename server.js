@@ -28,7 +28,7 @@ http
     }
     if (urlPath.endsWith("/")) urlPath += "index.html";
     if (!path.extname(urlPath)) urlPath += ".html";
-    if (HIDDEN.has(urlPath) || urlPath.startsWith("/.git")) urlPath = "/__missing__.html";
+    if (HIDDEN.has(urlPath) || urlPath.startsWith("/.git") || urlPath.startsWith("/src/")) urlPath = "/__missing__.html";
     const file = path.normalize(path.join(ROOT, urlPath));
     if (!file.startsWith(ROOT)) {
       res.writeHead(403).end();

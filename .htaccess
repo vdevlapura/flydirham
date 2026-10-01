@@ -15,4 +15,4 @@ RewriteRule ^(.+?)/?$ $1.html [L]
 <FilesMatch "^(server\.js|package\.json|LINKEDIN\.md|\.gitignore)$">
   Require all denied
 </FilesMatch>
-RedirectMatch 404 /\.git
+RedirectMatch 404 ^/(\.git|src/)
